@@ -6,17 +6,28 @@
         <link rel="stylesheet" href = "css/style.css">
     </head>
 
-<header>
-    <!-- アカウント項目 -->
-</header>
+<div class = "app">
+  <header>
+      <!-- ヘッダーとログアウト項目 -->
+      <h1>家計簿App</h1>
+      <button onclick="location.href='subpages/account.html'">ログアウト</button>
+  </header>
 
-<body>
-    <!-- 月毎の合計収支の表示 とショートカットで月毎の内訳とグラフ表示 -->
-</body>
+  <div class = "main">
+      <tbody>
+    <!-- 月毎の合計収支の表示 とショートカットで月毎の内訳に移動とグラフ表示 -->
+        <p class="date">2023年3月</p>
+        <p class="money"><span class="bold">54,167</span> 円  <a href="subpages/items.html">></a></p>
+      </tbody>
+  </div>
 
-<body>
+  <body>
     <!-- 記入ページ-->
-</body>
+      <p>入力</p>
+      <input type="number">
+  </body>
+
+</div>
 
 
 </html>

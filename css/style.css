@@ -1,0 +1,23 @@
+.app{
+  background-color: aliceblue;
+}
+
+.main{
+    background-color: seagreen;
+    margin: 2%;
+    box-shadow: 5px;
+    text-align: center;
+    color: white;
+}
+
+.date{
+    border-bottom: 1px solid dimgray;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.money{
+    font-size: 30px;
+}

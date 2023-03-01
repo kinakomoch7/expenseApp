@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <title>家計簿app</title>
-        <link rel="stylesheet" href = "css/style.css">
+        <link rel="stylesheet" href = "css/accountStyle.css">
     </head>
 
 <header>
     <!-- アカウント項目 -->
 </header>
 
-<div id = account>
-    <form>
+<div class = app>
+    <form method = "post" action="index.html">
         <table>
             <tbody>
                 <tr>
@@ -20,13 +20,17 @@
                 </tr>
 
                 <tr>
-                    <th>パスワード入力
+                    <th>パスワード入力</th>
                     <td><input type="password"></td>
                 </tr>
 
                 <tr>
                     <th>パスワード再入力</th>
                     <td><input type="password"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="submit" value="登録完了"></td>
                 </tr>
             </tbody>
         </table>

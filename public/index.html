@@ -1,55 +1,19 @@
 <!DOCTYPE html>
 <html>
+  <head>
+   <meta charset="UTF-8">
+   <title>Sample FirebaseUI App</title>
+   <link rel="shortcut icon" href="#">
+   <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/4.6.1/firebaseui.css" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Firebase UI</title>
-  <script src="/__/firebase/7.17.1/firebase-app.js"></script>
-  <script src="/__/firebase/7.17.1/firebase-auth.js"></script>
-  <script src="/__/firebase/init.js"></script>
-  <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
-  <style>
-    .Info {
-      display: flex;
-      justify-content: center;
-      height: 48px;
-      line-height: 48px;
-    }
-
-    .Info button {
-      height: 24px;
-      margin: 12px;
-    }
-  </style>
-</head>
-
-<body>
-  <div id="firebaseui-auth-container"></div>
-
-  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/ui/3.5.2/firebase-ui-auth__ja.js"></script>
-  <script src="./index.js"></script>
-  <script>
-    //----------------------------------------------
-    // Firebase UIの設定
-    //----------------------------------------------
-    var uiConfig = {
-        // ログイン完了時のリダイレクト先
-        signInSuccessUrl: './subpages/main.html',
-
-        // 利用する認証機能
-        signInOptions: [
-          firebase.auth.EmailAuthProvider.PROVIDER_ID  //メール認証
-        ],
-
-      };
-
-      var ui = new firebaseui.auth.AuthUI(firebase.auth());
-      ui.start('#firebaseui-auth-container', uiConfig); 
-      </script>
-</body>
-
+  </head>
+  <body>
+    <p>ログイン</p>
+    <div id="firebaseui-auth-container"></div>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/4.6.1/firebaseui.js"></script>
+ 
+    <script src="../public/index.js" type="module"></script>
+  </body>
 </html>

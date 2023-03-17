@@ -1,4 +1,15 @@
 .app{
-    background-color: aquamarine;
+    background-color: aliceblue;
     margin: auto;
+}
+
+.login{
+    background-color: aliceblue;
+    margin: auto;
+    width: fit-content;
+}
+
+.botton{
+    display: flex;
+    justify-content: center;
 }

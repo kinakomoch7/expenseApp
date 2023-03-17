@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>家計簿app</title>
+        <link rel="stylesheet" href = "css/style.css">
+    </head>
+
+<div class = "app">
+  <header>
+      <!-- ヘッダーとログアウト項目 -->
+      <h1>家計簿App</h1>
+      <button onclick="location.href='subpages/account.html'">ログアウト</button>
+  </header>
+
+  <div class = "main">
+      <tbody>
+    <!-- 月毎の合計収支の表示 とショートカットで月毎の内訳に移動とグラフ表示 -->
+        <p class="date">2023年3月</p>
+        <p class="money"><span class="bold">54,167</span> 円  <a href="subpages/items.html">></a></p>
+      </tbody>
+  </div>
+
+  <body>
+      <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <!-- Load our React component. -->
+  <script src="src/firebase/Firebase.js"></script>
+  <script src="src/components/AddItem.js"></script>
+  <script src="src/components/Balance.js"></script>
+  <script src="src/components/ExpenseItems.js"></script>
+  <script src="src/components/Header.js"></script>
+  <script src="src/components/Home.js"></script>
+  <script src="src/components/IncomeExpense.js"></script>
+  <script src="src/components/IncomeItem.js"></script>
+  <script src="src/components/ItemsLists.js"></script>
+  <script src="src/components/TotalIncomeExpense.js"></script>
+  <script src="src/auth/AuthProvider.js"></script>
+  <script src="src/auth/Login.js"></script>
+  <script src="src/auth/PrivateRoute.js"></script>
+  <script src="src/auth/SignUp.js"></script>
+
+
+    <!-- 記入ページ-->
+      <p>入力</p>
+      <input type="number">
+
+      <div id="like_button_container"></div>
+  </body>
+
+</div>
+
+
+</html>
